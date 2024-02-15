@@ -15,5 +15,5 @@ app.use((req, res, next) => {
 app.use('/feed', feedroutes);
 
 
-mongoose.connect('mongodb+srv://anaypapnoi24:999999999@cluster0.n5ohx7d.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://USER:<PASSWORD>@cluster0.n5ohx7d.mongodb.net/?retryWrites=true&w=majority')
     .then(result => { app.listen(5000); }).catch(err => { console.log(err); })
